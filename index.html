@@ -24,9 +24,12 @@
       </svg>
       <span>AuditThread</span>
     </a>
-    <nav aria-label="Main navigation">
-      <a class="nav-secondary" href="#what-we-find">What we find</a>
-      <a class="nav-secondary" href="#team">The team</a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <div class="nav-links">
+        <a href="#approach">How it works</a>
+        <a href="#what-we-find">What we check</a>
+        <a href="#team">Team</a>
+      </div>
       <a class="nav-contact" href="https://calendar.app.google/1zUNWwXmNqKaqTUM9" rel="noreferrer">Book a demo</a>
     </nav>
   </header>
@@ -36,9 +39,9 @@
       <div class="hero-copy">
         <h1 id="hero-title">Find the gaps before the auditor <em>does.</em></h1>
         <p class="hero-intro">We find gaps, contradictions, duplication and risks in your SOPs, policies and other regulatory documents, then keep checking as they and the regulations change.</p>
-        <p class="hero-intro hero-intro-strong">Stay continually compliant, not just ready for the next audit.</p>
+        <p class="hero-intro hero-intro-strong">Review changes between audits, not just before them.</p>
         <div class="hero-actions">
-          <a class="button button-dark button-large" href="https://calendar.app.google/1zUNWwXmNqKaqTUM9" rel="noreferrer">Book a demo <span aria-hidden="true">↗</span></a>
+          <a class="button button-dark button-large" href="https://calendar.app.google/1zUNWwXmNqKaqTUM9" rel="noreferrer">Book a demo</a>
           <a class="text-link" href="#approach">How we work <span aria-hidden="true">↓</span></a>
         </div>
         <div class="hero-proof">
@@ -50,23 +53,45 @@
             <li><img src="logos/anz.svg" alt="ANZ" class="logo-anz" width="72" height="24"></li>
             <li><img src="logos/ubs.png" alt="UBS" class="logo-ubs"></li>
             <li><img src="logos/deutschebank.svg" alt="Deutsche Bank" class="logo-db"></li>
-            <li><img src="logos/web3j.png" alt="" class="logo-web3j"><span class="logo-word">web3j</span></li>
           </ul>
         </div>
       </div>
 
-      <figure class="workflow-figure report-figure" aria-labelledby="report-badge report-title">
-        <div class="figure-top"><span class="case-badge" id="report-badge"><span class="case-dot" aria-hidden="true"></span>Illustrative example</span><span class="figure-title" id="report-title">Gap report · Pharmacovigilance SOPs</span><span class="figure-scope">Checked against EU GVP Module VI and 21 CFR 314.80</span></div>
-        <ul class="finding-list" role="list">
-          <li class="finding"><span class="finding-type">Contradiction</span><span class="finding-ref">SOP-PV-04 §5.2 · WI-PV-11 §2</span><p>The SOP sets Day 0 at first receipt. The work instruction sets it at database entry.</p></li>
-          <li class="finding"><span class="finding-type">Gap</span><span class="finding-ref">SOP-PV-03 §4</span><p>No step for following up reports that arrive without the minimum information.</p></li>
-          <li class="finding"><span class="finding-type">Duplication</span><span class="finding-ref">SOP-PV-04 §3 · SOP-QA-02 §6</span><p>Case-validity criteria are written out in both. Update one and the other falls behind.</p></li>
-          <li class="finding"><span class="finding-type">Risk</span><span class="finding-ref">SOP-PV-01 §1.3</span><p>Still cites a superseded revision of GVP Module VI, so its timelines may not match current guidance.</p></li>
-        </ul>
-        <div class="checkpoint"><span class="checkpoint-symbol" aria-hidden="true">◇</span><span>Your experts confirm or reject each finding</span></div>
-        <div class="review-loop"><span aria-hidden="true">↺</span> Re-checked when your documents or the regulations change</div>
-        <figcaption><a href="https://conorsvensson.com/writing/building-an-evals-framework-for-audits/" rel="noreferrer">Building an evals framework for audits <span aria-hidden="true">→</span></a></figcaption>
+      <figure class="review-figure" aria-labelledby="review-title">
+        <div class="review-top"><span class="review-brand">AuditThread <span> / Document review</span></span><span class="review-sample">Example from open text</span></div>
+        <div class="review-meta"><span>STRATA trial protocol · §23</span><span>Finding 5 of 5</span></div>
+        <div class="review-workspace">
+          <div class="review-document">
+            <div class="document-head"><span>Document excerpt</span><span>§23 · Monitoring and audit</span></div>
+            <div class="document-scroll">
+              <h3 id="review-title">Frequency and plans for auditing trial conduct</h3>
+              <p>Monitoring and audits will be conducted by University Hospitals Bristol and Weston NHS Foundation Trust (UHBW), on behalf of the Sponsor, and will ensure adherence to <mark>ICH GCP (International Conference on Harmonisation for Good Clinical Practice)</mark> and the aforementioned regulations. All trial-related documents will be made available on request for monitoring and audit by the Sponsor, the relevant REC and for inspection by MHRA and other licensing bodies.</p>
+              <p>A Trial Monitoring Plan has been developed by the Sponsors and agreed upon by the TMG and CI based on the trial risk assessment which may include on-site monitoring. Monitoring will be initiated using a risk-based approach.</p>
+            </div>
+          </div>
+          <aside class="review-comment" aria-label="Reviewer's comment">
+            <div class="review-badges"><span>Out of date</span><span>Minor</span></div>
+            <p class="review-author">AI reviewer · suggested finding</p>
+            <p>The text uses an older name for ICH. The current name is International Council for Harmonisation. Check the reference before reusing this wording.</p>
+            <a href="https://www.gov.uk/guidance/clinical-trials-for-medicines-compliance-with-ich-e6-good-clinical-practice-gcp-in-the-united-kingdom" rel="noreferrer">MHRA guidance · Regulation 28 <span aria-hidden="true">↗</span></a>
+          </aside>
+        </div>
+        <figcaption>Excerpt from <a href="https://doi.org/10.1186/s13063-023-07847-3" rel="noreferrer">Rai et al., STRATA protocol, Trials 2024</a> (<a href="https://creativecommons.org/licenses/by/4.0/" rel="noreferrer">CC BY 4.0</a>); section extracted and formatting simplified. Sample comment adapted from a reviewer run. Expert decisions remain with the reviewer.</figcaption>
       </figure>
+    </section>
+
+    <section class="approach-section section-pad" id="approach" aria-labelledby="approach-title">
+      <div class="shell">
+        <div class="approach-heading">
+          <p class="eyebrow">How we work</p>
+          <h2 id="approach-title">From your documents to a review your team can use.</h2>
+        </div>
+        <ol class="engagement-steps">
+          <li><span class="step-number" aria-hidden="true">01</span><div><h3>Agree the sources</h3><p>Choose a document set and the rules and related procedures it needs to meet.</p></div></li>
+          <li><span class="step-number" aria-hidden="true">02</span><div><h3>Read the findings</h3><p>See the passage, the suggested issue and its source together. Your experts decide what to change.</p></div></li>
+          <li><span class="step-number" aria-hidden="true">03</span><div><h3>Decide what to revisit</h3><p>Agree what to check again when a document or a rule changes.</p></div></li>
+        </ol>
+      </div>
     </section>
 
     <section class="starting-section section-pad" id="starting-points" aria-labelledby="starting-title">
@@ -116,19 +141,6 @@
       </div>
     </section>
 
-    <section class="approach-section section-pad shell" id="approach" aria-labelledby="approach-title">
-      <div class="section-heading approach-heading">
-        <p class="eyebrow">How an engagement works</p>
-        <h2 id="approach-title">A clear next step.<br>At every stage.</h2>
-        <p>A hands-on service, with the AuditThread platform behind it. Start with one set of documents, review the findings, then decide what to keep checking.</p>
-      </div>
-      <ol class="engagement-steps">
-        <li><span class="step-number" aria-hidden="true">1</span><div><h3>Scope.</h3><p>We agree which regulations and guidance apply and which documents to start with, then configure AuditThread for them.</p></div></li>
-        <li><span class="step-number" aria-hidden="true">2</span><div><h3>Review.</h3><p>We run your documents against those regulations and against each other, and go through the findings with your team. Your experts decide what to fix, merge or leave.</p></div></li>
-        <li><span class="step-number" aria-hidden="true">3</span><div><h3>Keep checking.</h3><p>We re-check as your documents or the regulations change, and report what's new. Ongoing checks are agreed separately from the first review.</p></div></li>
-      </ol>
-      <a class="text-link approach-cta" href="https://calendar.app.google/1zUNWwXmNqKaqTUM9" rel="noreferrer">Book a demo <span aria-hidden="true">→</span></a>
-    </section>
 
     <section class="people-section section-pad" id="team" aria-labelledby="team-title">
       <div class="shell">
