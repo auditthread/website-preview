@@ -32,8 +32,9 @@
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"AuditThread","url":"https://auditthread.com/","logo":"https://auditthread.com/icon-512.png","description":"AuditThread drafts, checks and updates SOPs and other GxP documents, so you find the gaps before the auditor does. Your experts sign off every change."}</script>
 
   <!-- Google Analytics (GA4) loads from consent.js only after a visitor accepts cookies; the ID is on <html data-ga-id>. -->
-  <link rel="stylesheet" href="/styles.css">
-  <script src="/consent.js" defer></script>
+  <!-- ?v= is the file hash: Cloudflare lets browsers keep CSS and JS for 4 hours, so new HTML must point at new URLs. -->
+  <link rel="stylesheet" href="/styles.css?v=39b2a197e4">
+  <script src="/consent.js?v=7770621a95" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -204,7 +205,7 @@
         </div>
         <div class="eval-wrap">
           <div class="eval-loop" aria-hidden="true">
-            <svg class="eval-ring" viewBox="0 0 400 400"><circle cx="200" cy="200" r="160"/></svg>
+            <svg class="eval-ring" viewBox="0 0 400 400" width="400" height="400"><circle cx="200" cy="200" r="160" fill="none" stroke="#9fb3a5" stroke-width="1.5"/></svg>
             <div class="eval-orbit"><span class="eval-dot"></span></div>
             <span class="eval-node eval-n1">Plant errors</span>
             <span class="eval-node eval-n2">Run</span>
