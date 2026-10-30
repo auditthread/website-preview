@@ -51,6 +51,7 @@
     <nav class="site-nav" aria-label="Main navigation">
       <a href="#what-we-do">What we do</a>
       <a href="#approach">How it works</a>
+      <a href="#pilot">Pilot</a>
       <a href="#team">Team</a>
     </nav>
     <a class="nav-contact" href="https://calendar.app.google/1zUNWwXmNqKaqTUM9" rel="noreferrer">Book a demo</a>
@@ -84,25 +85,33 @@
 
     <div class="hero-stage shell">
       <figure class="review-figure" aria-labelledby="review-title">
-        <div class="review-top"><span class="review-brand">AuditThread <span> / Document review</span></span><span class="review-sample">Example from open text</span></div>
-        <div class="review-meta"><span>STRATA trial protocol · §23</span><span>Finding 5 of 5</span></div>
+        <div class="review-top"><span class="review-brand">AuditThread <span> / Document review</span></span></div>
+        <div class="review-meta"><span>Change control SOP · §3 and §6</span><span>2 findings</span></div>
         <div class="review-workspace">
           <div class="review-document">
-            <div class="document-head"><span>Document excerpt</span><span>§23 · Monitoring and audit</span></div>
+            <div class="document-head"><span>Document excerpt</span><span>Change control</span></div>
             <div class="document-scroll">
-              <h3 id="review-title">Frequency and plans for auditing trial conduct</h3>
-              <p>Monitoring and audits will be conducted by University Hospitals Bristol and Weston NHS Foundation Trust (UHBW), on behalf of the Sponsor, and will ensure adherence to <mark>ICH GCP (International Conference on Harmonisation for Good Clinical Practice)</mark> and the aforementioned regulations. All trial-related documents will be made available on request for monitoring and audit by the Sponsor, the relevant REC and for inspection by MHRA and other licensing bodies.</p>
-              <p>A Trial Monitoring Plan has been developed by the Sponsors and agreed upon by the TMG and CI based on the trial risk assessment which may include on-site monitoring. Monitoring will be initiated using a risk-based approach.</p>
+              <h3 id="review-title">3. Approval of changes</h3>
+              <p><mark class="mark-related">Every change to a GMP system is approved by Quality Assurance before it is implemented.</mark> The change record holds the approval, the impact assessment and the plan for verifying the change.</p>
+              <h3>6. Minor changes</h3>
+              <p><mark>A minor change may be implemented by the System Owner and approved by Quality Assurance within 30 days after it is implemented.</mark></p>
             </div>
           </div>
-          <aside class="review-comment" aria-label="Reviewer's comment">
-            <div class="review-badges"><span>Out of date</span><span>Minor</span></div>
-            <p class="review-author">AI reviewer · suggested finding</p>
-            <p>The text uses an older name for ICH. The current name is International Council for Harmonisation. Check the reference before reusing this wording.</p>
-            <a href="https://www.gov.uk/guidance/clinical-trials-for-medicines-compliance-with-ich-e6-good-clinical-practice-gcp-in-the-united-kingdom" rel="noreferrer">MHRA guidance · Regulation 28 <span aria-hidden="true">↗</span></a>
-          </aside>
+          <div class="review-comments">
+            <aside class="review-comment" aria-label="Reviewer's first finding">
+              <div class="review-badges"><span>Contradiction</span><span class="sev-major">Major</span></div>
+              <p class="review-author">AI reviewer · §6 against §3</p>
+              <p>Section 3 says every change needs Quality Assurance approval before it is implemented, but section 6 lets minor changes go ahead first and be approved up to 30 days later. The two sections conflict.</p>
+            </aside>
+            <aside class="review-comment" aria-label="Reviewer's second finding">
+              <div class="review-badges"><span>Contradiction</span><span class="sev-major">Major</span></div>
+              <p class="review-author">AI reviewer · §6 against EU GMP</p>
+              <p>The rules require planned changes to be evaluated and approved before they are made. Approving a minor change after the fact means it could affect quality or the validated state with no prior check.</p>
+              <a href="https://health.ec.europa.eu/document/download/e458c423-f564-4171-b344-030a461c567f_en?filename=vol4-chap1_2013-01_en.pdf#page=3" rel="noreferrer">EU GMP Chapter 1 · 1.4(xii) <span aria-hidden="true">↗</span></a>
+            </aside>
+          </div>
         </div>
-        <figcaption>Excerpt from <a href="https://doi.org/10.1186/s13063-023-07847-3" rel="noreferrer">Rai et al., STRATA protocol, Trials 2024</a> (<a href="https://creativecommons.org/licenses/by/4.0/" rel="noreferrer">CC BY 4.0</a>); section extracted and formatting simplified. Sample comment adapted from a reviewer run. Expert decisions remain with the reviewer.</figcaption>
+        <figcaption>EU GMP text © European Union, <a href="https://creativecommons.org/licenses/by/4.0/" rel="noreferrer">CC BY 4.0</a>.</figcaption>
       </figure>
     </div>
 
@@ -123,11 +132,10 @@
       <div class="shell">
         <h2 id="problem-title" class="centred">Pharma has automated its factories.<br>The paperwork is still done by hand.</h2>
         <div class="stat-grid">
-          <div class="stat reveal"><strong>#1</strong><p>FDA's most cited finding at drug plants, year after year: quality procedures not written down or not followed.</p></div>
-          <div class="stat reveal"><strong>50–70</strong><p>SOPs to rewrite when one site moves to a new system or adds a line.</p></div>
-          <div class="stat reveal"><strong>6–7 weeks</strong><p>to review and close out a validation test that took one week to run.</p></div>
+          <div class="stat reveal"><a class="stat-tag" href="https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/inspection-references/inspection-observations" rel="noreferrer">FDA inspection data <span aria-hidden="true">↗</span></a><strong>#1</strong><p>FDA's most cited finding at drug plants, year after year: quality unit procedures not written down or not followed.</p></div>
+          <div class="stat reveal"><span class="stat-tag">Industry feedback</span><strong>50–70</strong><p>SOPs to rewrite when one site moves to a new system or adds a line.</p></div>
+          <div class="stat reveal"><span class="stat-tag">Industry feedback</span><strong>6–7 weeks</strong><p>to review and close out a validation test that took one week to run.</p></div>
         </div>
-        <p class="stat-source">FDA inspection data, 21 CFR 211.22(d). Other figures from people in the industry.</p>
       </div>
     </section>
 
@@ -192,17 +200,44 @@
         <div class="section-head centred">
           <p class="eyebrow">How we test it</p>
           <h2 id="testing-title">“How do you know it's right?”</h2>
-          <p class="section-intro">It's the first question every QA head asks. We test our AI like a new hire.</p>
+          <p class="section-intro">It's the first question every QA head asks. We answer it with evals: repeatable tests that score our AI on SOPs where we already know the answers.</p>
         </div>
-        <div class="test-grid">
-          <article class="test-card reveal">
-            <h3>We plant errors in real SOPs.</h3>
-            <p>Then we check what it catches, misses and makes up. Every new version is tested again.</p>
-          </article>
-          <article class="test-card reveal">
-            <h3>In a pilot, your expert reviews too.</h3>
-            <p>You both review the same documents. Then we compare, finding by finding.</p>
-          </article>
+        <div class="eval-wrap">
+          <div class="eval-loop" aria-hidden="true">
+            <svg class="eval-ring" viewBox="0 0 400 400"><circle cx="200" cy="200" r="160"/></svg>
+            <div class="eval-orbit"><span class="eval-dot"></span></div>
+            <span class="eval-node eval-n1">Plant errors</span>
+            <span class="eval-node eval-n2">Run</span>
+            <span class="eval-node eval-n3">Score</span>
+            <span class="eval-node eval-n4">Improve</span>
+            <div class="eval-core">
+              <p class="eval-version"><span class="eval-v1">Version 1</span><span class="eval-v2">Version 2</span></p>
+              <div class="eval-bar"><span>Caught</span><b><i class="eval-caught"></i></b></div>
+              <div class="eval-bar"><span>Missed</span><b><i class="eval-missed"></i></b></div>
+              <div class="eval-bar"><span>Made up</span><b><i class="eval-made"></i></b></div>
+            </div>
+          </div>
+          <ol class="eval-steps">
+            <li class="reveal"><h3>Plant errors</h3><p>We hide known errors in real SOPs: wrong deadlines, out-of-date references, sections that contradict each other.</p></li>
+            <li class="reveal"><h3>Run</h3><p>The AI reviews each SOP several times, so one lucky run doesn't count.</p></li>
+            <li class="reveal"><h3>Score</h3><p>Every finding is marked caught, missed or made up, with a domain expert on the hard calls.</p></li>
+            <li class="reveal"><h3>Improve</h3><p>We change the AI's instructions and run the same test again. Every new version takes it before it ships.</p></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="dark-section panel section-pad" id="pilot" aria-labelledby="pilot-title">
+      <div class="shell">
+        <div class="section-head centred">
+          <p class="eyebrow">Pilot</p>
+          <h2 id="pilot-title">Start with one process.</h2>
+          <p class="section-intro">A pilot takes two to three weeks. We run it with you on AuditThread, on a process such as change control or deviations.</p>
+        </div>
+        <div class="pillar-grid">
+          <article class="pillar reveal"><h3>You bring</h3><p>The SOPs and work instructions for that process, the rules they must meet, and time with your QA lead to check our findings.</p></article>
+          <article class="pillar reveal"><h3>You get</h3><p>Every finding with the passage and rule behind it, Word files with tracked changes, and a side-by-side with your own review.</p></article>
+          <article class="pillar reveal"><h3>Then</h3><p>If it works for you, we roll AuditThread out to your other processes.</p></article>
         </div>
       </div>
     </section>
