@@ -456,3 +456,32 @@ a.stat-tag:hover { background: #d9e3d4; }
   .hero, .dark-section, .contact-section { background: white; color: var(--ink); }
   .hero h1, .dark-section h2, .pillar h3, .contact-inner h2 { color: var(--ink); }
 }
+
+.nowrap { white-space: nowrap; }
+
+/* Problem: 5 days of work against 54+ days waiting for sign-off */
+.signoff { max-width: 920px; margin: 56px auto 0; padding: 30px 32px 28px; background: var(--white); border: 1px solid var(--line); border-radius: var(--radius-card); }
+.signoff-bar { position: relative; display: flex; height: 18px; margin-top: 4px; border-radius: 999px; overflow: hidden; background: var(--sage); }
+.signoff-work { flex: 0 0 8.5%; background: var(--forest); }
+.signoff-wait { flex: 1; background: repeating-linear-gradient(135deg, #f0c9bd 0 6px, #f8e3dc 6px 12px); }
+.signoff-open { position: absolute; right: 12px; top: 50%; transform: translateY(-50%); font-size: 10px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: #a8361f; }
+.signoff-legend { display: flex; justify-content: space-between; gap: 24px; margin-top: 14px; font-size: 15px; color: var(--muted); }
+.signoff-legend span:last-child { text-align: right; }
+.signoff-legend b { display: block; font-size: 28px; font-weight: 500; letter-spacing: -.04em; color: var(--forest); }
+.signoff-legend span:last-child b { color: #a8361f; }
+
+/* Why now: sage panel with white figure cards */
+.why-section { background: var(--sage); }
+.why-section .section-head { max-width: 860px; }
+
+/* What we do: stage pills on the roadmap cards */
+.pillar-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 30px; }
+.pillar-top .pillar-icon { margin-bottom: 0; }
+.pillar-stage { padding: 4px 12px; border: 1px solid rgba(213, 238, 152, .4); border-radius: 999px; font-size: 12px; font-weight: 700; color: var(--lime); }
+.pillar-stage.is-live { background: var(--lime); border-color: var(--lime); color: var(--forest); }
+
+@media (max-width: 640px) {
+  .signoff { margin-top: 40px; padding: 24px 22px; }
+  .signoff-legend { font-size: 14px; }
+  .signoff-legend b { font-size: 24px; }
+}
